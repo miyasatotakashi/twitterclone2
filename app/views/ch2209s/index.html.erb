@@ -1,2 +1,15 @@
 <h1>２２０９ちゃんねる</h1>
-<p>Find me in app/views/ch2209s/index.html.erb</p>
+
+<table>
+  <tr>
+    <th>タイトル</th>
+    <th>内容</th>
+  </tr>
+
+<% @ch2209s.each do |ch2209| %>
+  <tr>
+    <td><%= ch2209.comment %></td>
+    <%= link_to '一覧画面に戻る', ch2209s_path %>
+  </tr>
+<% end %>
+</table>
