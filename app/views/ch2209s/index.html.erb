@@ -9,7 +9,11 @@
 <% @ch2209s.each do |ch2209| %>
   <tr>
     <td><%= ch2209.comment %></td>
-    <%= link_to '一覧画面に戻る', ch2209s_path %>
+    <%= link_to '詳細を確認する', ch2209s_path(ch2209.id) %>
   </tr>
 <% end %>
 </table>
+
+<br>
+
+<%= link_to '新しく投稿する', new_ch2209s_path %>

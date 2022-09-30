@@ -12,6 +12,9 @@ class Ch2209sController < ApplicationController
     redirect_to new_ch2209_path
   end
 
+  def show
+  end
+
   private
 
   def ch2209_params
