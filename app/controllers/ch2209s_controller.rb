@@ -13,6 +13,7 @@ class Ch2209sController < ApplicationController
   end
 
   def show
+    params[:id]
   end
 
   private
