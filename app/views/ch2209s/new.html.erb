@@ -1,0 +1,7 @@
+<%= form_with(model: Ch2209.new, local: true) do |form| %>
+  <div class="ch2209_comment">
+    <%= form.label :comment %>
+    <%= form.text_field :comment %>
+  </div>
+  <%= form.submit %>
+<% end %>
