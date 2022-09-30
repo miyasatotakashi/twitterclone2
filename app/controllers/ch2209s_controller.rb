@@ -8,6 +8,7 @@ class Ch2209sController < ApplicationController
 
   def create
     Ch2209.create(comment: params[:ch2209][:comment])
+    redirect_to new_blog_path
   end
 
 end
