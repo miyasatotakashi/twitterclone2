@@ -3,6 +3,7 @@ class Ch2209sController < ApplicationController
   end
 
   def new
+    @ch2209 = Ch2209.new
   end
-  
+
 end
