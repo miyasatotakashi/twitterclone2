@@ -8,12 +8,15 @@ class Ch2209sController < ApplicationController
   end
 
   def create
-    Ch2209.create(ch2209_params)
-    redirect_to new_ch2209_path
+    @ch2209 = Ch2209.new(blog_params)
+    if @ch2209.save
+    redirect_to ch2209_path, notice: "コメントを作成しました"
+    else
+      render :new
   end
 
   def show
-    params[:id]
+    @ch2209 = Ch2209.find(params[:id])
   end
 
   private
